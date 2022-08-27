@@ -6,5 +6,6 @@ public class Singleton {
     @Test
     public void SingletonEHTest(){
         System.out.println(SingletonEH.getInstance());
+        System.out.println("");
     }
 }
