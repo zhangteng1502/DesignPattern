@@ -4,6 +4,7 @@ package 单例设计模式;
 /**
  * 恶汉式
  * 在静态代码块中创建该类对象
+ * 存在内存浪费问题
  */
 public class SingletonEH2 {
 
