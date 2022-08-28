@@ -1,3 +1,5 @@
+package Singleton;
+
 import org.junit.Test;
 import 单例设计模式.SingletonLH3;
 
