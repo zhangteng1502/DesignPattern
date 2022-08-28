@@ -4,6 +4,8 @@ package 单例设计模式;
  * 饿汉式
  * 静态变量创建类的对象
  * 存在内存浪费问题
+ *
+ * Runtime类使用的就是该模式
  */
 public class SingletonEH {
     //私有构造方法
