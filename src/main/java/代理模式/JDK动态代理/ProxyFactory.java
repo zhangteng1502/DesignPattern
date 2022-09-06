@@ -4,6 +4,9 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
+/**
+ * @author 张腾
+ */
 public class ProxyFactory {
 
     private TrainStation station = new TrainStation();
