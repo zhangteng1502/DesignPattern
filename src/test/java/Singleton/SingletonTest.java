@@ -1,6 +1,5 @@
 package Singleton;
 
-import com.sun.org.slf4j.internal.Logger;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import 单例设计模式.SingletonLH3;
