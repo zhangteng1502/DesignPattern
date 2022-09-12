@@ -1,11 +1,15 @@
 package Singleton;
 
+import com.sun.org.slf4j.internal.Logger;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import 单例设计模式.SingletonLH3;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
+
+@Slf4j(topic = "c.SingletonTest")
 public class SingletonTest {
 
     @Test
@@ -22,7 +26,9 @@ public class SingletonTest {
         SingletonLH3 s2 = (SingletonLH3) constructor.newInstance();
         //判断通过反射创建的两个Singleton对象是否是同一个对象
         //上面代码运行结果是 false ，表明序列化和反序列化已经破坏了单例设计模式
-        System.out.println(s1 == s2);
+
+        //System.out.println(s1 == s2);
+        log.debug("{}",s1==s2);
 
     }
 }
