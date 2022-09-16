@@ -3,8 +3,8 @@ package 享元模式;
 /**
  * @version v1.0
  * @ClassName: Client
- * @Description: TODO(一句话描述该类的功能)
- * @Author:
+ * @Description:
+ * @Author: zhangteng
  */
 public class Client {
     public static void main(String[] args) {
