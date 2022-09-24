@@ -14,7 +14,7 @@ public class 基本格式 {
                 log.debug("一会去吃饭");
             }
         }).start();
-        new Thread(()->{
+        new Thread(() -> {
             log.debug("吃啥");
         }).start();
 
@@ -23,13 +23,21 @@ public class 基本格式 {
         });
         System.out.println(i);
 
+        //匿名内部类
+        System.out.println(calculaNum(new IntBinaryOperator() {
+            @Override
+            public int applyAsInt(int left, int right) {
+                return left+right;
+            }
+        }));
+
     }
 
 
-    public static  int calculaNum(IntBinaryOperator operator){
+    public static int calculaNum(IntBinaryOperator operator) {
         int a = 10;
         int b = 20;
-        return operator.applyAsInt(a,b);
+        return operator.applyAsInt(a, b);
     }
 
 }
