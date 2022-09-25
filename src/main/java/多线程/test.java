@@ -32,6 +32,13 @@ public class test {
             }
         }).start();
 
+        new Thread(){
+            @Override
+            public void run() {
+                System.out.println("ss");
+            }
+        }.start();
+
 //        sleep(2000);
 //        log.debug("唤醒 obj 上其它线程");
 //        synchronized (object) {
