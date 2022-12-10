@@ -1,7 +1,7 @@
 package 行为型模式.模板方法模式;
 
 public abstract class AbstractClass {
-
+    //注意：为防止恶意操作，一般模板方法都加上 final 关键词。
     public final void cookProcess() {
         //第一步：倒油
         this.pourOil();
